@@ -1,0 +1,20 @@
+﻿<Window x:Class="Aulas.Arquivo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aulas"
+        mc:Ignorable="d"
+        Title="Arquivo" Height="420" Width="614" Closing="Window_Closig">
+    <Grid>
+        <Label Content="Editor de Texto" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NomeArquivo" HorizontalAlignment="Left" Height="23" Margin="100,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" IsReadOnly="True"/>
+        <Button x:Name="Abrir" Content="Abrir" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="75" Click="Abrir_Click"/>
+        <TextBox x:Name="Conteudo" HorizontalAlignment="Left" Height="270" Margin="10,67,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="572"
+                 AcceptsReturn="True" AcceptsTab="True"  VerticalScrollBarVisibility="Auto" TextChanged="Conteudo_TextChanged"/>
+        <Button x:Name="Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="Salvar_Click"/>
+        <Button x:Name="SalvarComo" Content="Salvar Como" HorizontalAlignment="Left" Margin="111,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="SalvarComo_Click"/>
+        <Button x:Name="Fechar" Content="Fechar" HorizontalAlignment="Left" Margin="507,342,0,0" VerticalAlignment="Top" Width="75" Click="Fechar_Click"/>
+
+    </Grid>
+</Window>

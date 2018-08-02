@@ -1,0 +1,12 @@
+SOBRE A PASTA SOURCE
+--------------------------------------------------------------------------------------
+Esta pasta contém os recursos desenvolvidos por terceiros 
+utilizados nos seus projetos WPF e WEB
+--------------------------------------------------------------------------------------
+Crie uma pasta para cada recurso e coloque todos os arquivos de códigos, documentos,
+licenças e binários.
+
+Indique sempre a versão do recuro no nome da pasta 
+--------------------------------------------------------------------------------------
+FAÇA BACKUP SEMPRE QUE HOUVER UMA ATUALIZAÇÃO
+--------------------------------------------------------------------------------------

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- CARREGA O ARQUINO CSS -->
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <!-- CABEÇALHO -->
+        <header>
+            <div class="content-wrapper">
+                <div class="heading">
+                    <!-- LOGOMARCA -->
+                    <div class="logomarca">
+                        <asp:Image ID="Image1" ImageUrl="~/images/marca.png" runat="server" />
+                    </div>
+                    <!-- MENU -->
+                    <div class="menu">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Sobre.aspx">Sobre Nós</asp:HyperLink>
+                
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/FaleConosco.aspx">Fale Conosco</asp:HyperLink>
+                
+                        <asp:HyperLink ID="Cadastro" runat="server" NavigateUrl="~/App_Admin/Usuarios.aspx">Usuários</asp:HyperLink>
+                
+                        <asp:HyperLink ID="Login" runat="server" NavigateUrl="~/Login.aspx">LOGIN</asp:HyperLink>
+                    
+                        <asp:HyperLink ID="Logout" Visible="false" runat="server" NavigateUrl="~/Logout.aspx">lOGOUT</asp:HyperLink>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTEÚDO -->
+        <div class="body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="content-wrapper">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

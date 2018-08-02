@@ -1,0 +1,21 @@
+﻿<Window x:Class="Aulas.Imagens"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aulas"
+        mc:Ignorable="d"
+        Title="Imagens" Height="500" Width="500" Closing="Window_Closing">
+    <Grid Background="#FF576574">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="184*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Imagem" HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="253" Margin="3,0,0,0" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label x:Name="Informacoes" Content="Label" HorizontalAlignment="Left" Margin="47,0,0,0" VerticalAlignment="Top" Width="253" Height="434" Background="#FFDCDDE1" Grid.Column="2"/>
+        <Button x:Name="Abrir" Content="Abrir" HorizontalAlignment="Left" Margin="10,439,0,0" VerticalAlignment="Top" Width="75" Click="Abrir_Click" Grid.Column="1"/>
+        <Button x:Name="Sair" Content="Tchau" HorizontalAlignment="Left" Margin="225,439,0,0" VerticalAlignment="Top" Width="75" Click="Sair_Click" Grid.Column="2"/>
+
+    </Grid>
+</Window>
